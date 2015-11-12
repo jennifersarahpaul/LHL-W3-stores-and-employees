@@ -10,3 +10,11 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "Which store would you like to shop at?"
+answer = gets.chomp
+
+store = Store.create(name: answer)
+puts store.errors.first
+
+
